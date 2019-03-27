@@ -1,0 +1,280 @@
+/*Sentence*/
+.sentence{
+     color: #222;
+     font-size: 30px;
+     text-align: left;
+}
+
+/*Vertical Sliding*/
+
+.slidingVertical span{
+	animation: topToBottom 12.5s linear infinite 0s;
+	-ms-animation: topToBottom 12.5s linear infinite 0s;
+	-webkit-animation: topToBottom 12.5s linear infinite 0s;
+	color: #fff;
+	opacity: 0;
+	overflow: hidden;
+	position: center;
+}
+.slidingVertical span:nth-child(2){
+	animation-delay: 2.5s;
+	-ms-animation-delay: 2.5s;
+	-webkit-animation-delay: 2.5s;
+}
+.slidingVertical span:nth-child(3){
+	animation-delay: 5s;
+	-ms-animation-delay: 5s;
+	-webkit-animation-delay: 5s;
+}
+.slidingVertical span:nth-child(4){
+	animation-delay: 7.5s;
+	-ms-animation-delay: 7.5s;
+	-webkit-animation-delay: 7.5s;
+}
+.slidingVertical span:nth-child(5){
+	animation-delay: 10s;
+	-ms-animation-delay: 10s;
+	-webkit-animation-delay: 10s;
+}
+
+/*topToBottom Animation*/
+@-moz-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -moz-transform: translateY(-50px); }
+	10% { opacity: 1; -moz-transform: translateY(0px); }
+	25% { opacity: 1; -moz-transform: translateY(0px); }
+	30% { opacity: 0; -moz-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-webkit-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -webkit-transform: translateY(-50px); }
+	10% { opacity: 1; -webkit-transform: translateY(0px); }
+	25% { opacity: 1; -webkit-transform: translateY(0px); }
+	30% { opacity: 0; -webkit-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+@-ms-keyframes topToBottom{
+	0% { opacity: 0; }
+	5% { opacity: 0; -ms-transform: translateY(-50px); }
+	10% { opacity: 1; -ms-transform: translateY(0px); }
+	25% { opacity: 1; -ms-transform: translateY(0px); }
+	30% { opacity: 0; -ms-transform: translateY(50px); }
+	80% { opacity: 0; }
+	100% { opacity: 0; }
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%; 
+}
+
+h3 {
+	margin: 0 0 1em 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#wrapper {
+	max-width: 940px; /* tidak lebih dari 940 pixel */
+	margin: 0 auto; /* yg ada pada div seperti ke center, nilai pertama untuk atas dan bawah, 
+	nilai kedua kiri dan kanan otomatis mengisi sela */
+	padding: 0 5%; /* nilai yang pertama utk bagian atas dan bawah, 
+	nilai yang kedua untuk bagian kiri dan kanan */
+	/* background: orange; */
+}
+/* pengisian nilai dalam css bisa 
+dalam bentuk kata kunci atau nilai angka, 
+margin bisa menrima dua bentuk dalam pengisian nilai css */
+
+/*******************
+HEADING untuk HEADER
+********************/
+
+header {
+	float: left;
+	margin: 0 0 30px 0;
+	padding: 5px 0 0 0;/* pengingat urutan atas, kanan, bawah, kiri. Searah jarum jam */
+	width : 100%;
+}
+
+#logo {
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	font-family: 'Changa One',   sans-serif; /*font dari mbah google */
+	margin: 15px 0; /* yang kiri kanan kosong */
+	font-size: 1.75em;/*  1em = 16px */
+	font-weight: 800;/*tidak ada hiasan bold dll */
+	line-height: 0.8em;
+}
+
+h2 {
+	font-size: 1em; 
+	margin:-5px 0 0; /*yang pertama atas ada min agar lebih rapat, 
+	yang kedua kiri dan kanan, yang ketiga bawah */
+	font-weight: normal; 
+} 
+/*Navigasi */
+
+nav {
+	text-align: center;
+	padding : 10px 0;
+	margin : 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin : 0 10px;
+	padding: 0;
+
+}
+
+nav li { 
+	display: inline-block;  /* tombol jadi berurutan */
+}
+
+nav a {
+	font-weight: 800;
+	padding: 15px 10px;
+}
+
+/*Footer */
+
+footer {
+	font-size: 0.75em;
+	text-align: center;
+	clear: both; /* clear maksudnya tidak terpengaruh dengan perintah 
+	elemen lain di halaman ini pada float */
+	padding-top: 50px; /* hanya ingin padding di bagian atas */
+	color: #ccc;
+}
+
+.social-icon {
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
+
+/* portfolio */
+
+#gallery {
+	margin : 0;
+	padding : 0;
+	list-style: none; 
+}
+
+#gallery li {
+	float: left; /* tampilan mengarah ke kanan */
+	width: 45%; /* apapun jenis penampil, lebarnya 45% dan otomatis adaptasi, tiap gambar */
+	margin: 2.5%; /* tiap gambar ada margin di sekitarnya */
+	background-color: #f5f5f5; /* agak abu abu pada tiap gambar */
+	color : #bdc3c7;
+}
+
+#gallery li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: 0.75em;
+	color : #bdc3c7;
+
+}
+
+/* untuk halaman ABOUT */
+
+.profile-photo{
+	float: left;
+	display: block;
+	max-width: 150px;
+	margin: 0 5% 80px 0;
+	border-radius: 50px; /*untuk membuat lingkaran pada gambar */
+}
+
+/* contact */
+.contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.contact-info a {
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 20px;
+}
+
+.contact-info li.phone a {
+	background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a{
+	background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+	background-image: url(' ../img/twitter.png');
+}
+
+.contact-info li.facebook a{
+	background-image: url(' ../img/facebook.png');
+}
+ 
+
+/* warna ijo hexanya #6ab47b */
+
+
+
+a {
+	color: #6ab47b;
+}
+
+
+header {
+	background: #6ab47b;
+	border-color: #599a68;
+}
+
+/* Teks Logo */
+h1, h2 {
+	color: #fff;
+}
+
+/* bagian tag nav, warna background */
+nav {
+	background: #599a68;
+}
+
+/* bagian tag nav, setelah di 'visited' */
+nav a, nav a:visited /* istilahnya pseudo, hanya sebagai keterangan, 
+gak berubah warna setelah diklik */ {
+	color: #fff;
+}
+
+/*jika di klik dan diselek bagian dari tag nav link */
+nav a.selected , nav a:hover{
+	color: #32673f;
+}
+
+/****
+WARNA
+*****/
+
+body {
+	background-color: #fff;
+	color: #999; /*abu-abu */
+}
